@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f766e">
+<meta name="description" content="HausHub – Zählerstände erfassen, auswerten und sichern">
+<title>HausHub</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="backBtn" class="icon-btn hidden" aria-label="Zurück">←</button>
+  <h1 id="title">HausHub</h1>
+  <div id="topActions" class="top-actions"></div>
+</header>
+
+<main id="main"><div class="loading">Lade …</div></main>
+
+<nav class="tabbar" id="tabbar">
+  <button data-tab="home"><span class="ti">🏠</span><span>Übersicht</span></button>
+  <button data-tab="stats"><span class="ti">📊</span><span>Auswertung</span></button>
+  <button data-tab="add" class="tab-add"><span class="ti plus">＋</span><span>Ablesen</span></button>
+  <button data-tab="meters"><span class="ti">🔢</span><span>Zähler</span></button>
+  <button data-tab="data"><span class="ti">💾</span><span>Daten</span></button>
+</nav>
+
+<div id="modalRoot"></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
